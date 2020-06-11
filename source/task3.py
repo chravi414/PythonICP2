@@ -1,5 +1,5 @@
 # open and read the file
-input_file = open("input.txt")
+input_file = open("./../input.txt")
 wordcount = {}
 
 # reading, splitting & Looping through the words in file
@@ -18,6 +18,6 @@ output = ''
 for word, count in wordcount.items():
     output += word + ':' + str(count) + '\n'
 
-output_file = open("output.txt", "w")
+output_file = open("./../output.txt", "w")
 output_file.write(output)
 output_file.close()
